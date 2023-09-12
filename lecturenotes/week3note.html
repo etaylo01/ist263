@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <title> Week 3 Notes</title>
+    </head>
+    <body>
+        <p> HTML attributes, can be added to a tag, always specified in the start of the tag <br>
+            we already have 2 attribute tags here, lang = "en", and charset = "utf-8" <br>
+            link tag is not called link its called a which means anchor which means you are going to be linked to another page 
+        </p>
+
+        <h1> Attributes, Links and Embedding</h1>
+
+        <h2> Links</h2>
+        <a href="http://google.com"> This is my link to google </a>
+        <p>a is an inline tag, needs a break br because it doesnt creat space. YOU NEED TO INCLUDE HTTP <br>
+            href is our attribute name and the url is the value </p>
+
+        <h3>2 types of links </h3>
+        <p>external links: link to outside websites <br>
+        internal links: link to internal links, you link to the file path within your laptop </p>
+        
+        <h3> Bookmark links</h3>
+        <p> Bookmark links want to link to content lower down your page <br>
+            2 parts: id place you are linking to and a pound sign that matches the id sign in the link
+        </p>
+        <a href="#example"> Bookmark link example to practice pathing</a>
+        <p> pound sign says link is happening on this page</p>
+
+        <h2> Pathing</h2>
+        <h3> Pathing to file in same directory</h3>
+        <a href="week2note.html"> Week 2 Notes</a>
+        <h3> Pathing to a file in another directory</h3>
+        <a href="../lab01/taylor-bio.html"> Lab 1 Bio</a>
+        <p> More on Relative Link Paths <br>
+        go up to parent folder, use ../ to go up </p>
+        
+        <h3 id="example"> Practice pathing </h3>
+        <p> path from image.html to index.html <br> 
+            ../index.html <br>
+            path from page.html to about.html <br>
+            ../../c/about.html</p>
+
+        <h3> Images </h3>
+        <p> img src="Image path" alt="Image Discription <br>
+            Can only use jpg, jpeg, png, or gif </p>
+
+        <img src="../images/otto.png" alt="Otto">
+
+
+        <h2> Embedding </h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU?si=HovernfmVBIlIvnx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+
+
+    </body>
+</html>
+
