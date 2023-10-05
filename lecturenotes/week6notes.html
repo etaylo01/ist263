@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 Notes</title>
+    <style>
+        /*selector property and value is in the CSS statements*/
+        h2 {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif}
+        /*you cant use any font you want!*/
+        h1 {font-size:3em;}
+        /*you can use units em or percentage, dont use pixels or points*/
+        /*element selector*/
+        p {
+            font-weight:bolder;
+            color:rgb(52, 99, 208);
+            text-decoration:underline;
+        /*dont underline stuff that is not a link*/
+        }
+        /*below is a descendant selector, selects a tag inside another tag*/
+        p a{color:blueviolet;}
+        /*id selectors below, use a pound sign*/
+        #secondid {color:chartreuse;}
+        /* this selects anything with a class that has the selector value*/
+        .yellow {color:yellow;}
+    </style>
+    <!-- Body tag is the way to do the whole page-->
+</head>
+<body>
+    <h1 class="yellow">CSS</h1>
+    <a href="http://www.amazon.com" class="yellow">Amazon</a>
+    <h2 class="yellow">Change the Font</h2>
+    <p><a href="http://www.ebay.com">Ebay</a>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, totam omnis inventore quo officiis quam voluptatum quas placeat iusto provident qui excepturi soluta assumenda sequi obcaecati commodi, deserunt nihil similique!</p>
+    <h2>Change the Size</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex at doloremque tempore alias? Cupiditate omnis magnam numquam, aspernatur, eligendi rem ullam accusantium enim blanditiis amet facere laudantium praesentium temporibus optio.</p>
+    <h2 id="secondid">Change the Weight</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus sapiente esse explicabo iste! Voluptatum, ducimus corporis quibusdam consequatur obcaecati expedita hic similique nulla iure reprehenderit deserunt voluptas nam quaerat nisi.</p>
+</body>
+</html>
