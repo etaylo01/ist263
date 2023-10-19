@@ -1,0 +1,12 @@
+selector {font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+body {background-color: #d1d5f5;}
+text {color: #4b2bdd;}
+a{color:#480a75}
+h1{color:#045d3c}
+nav {background-color:#7aee9d;
+    margin-bottom: 30px;
+}
+nav a{color:#4e514a;
+    padding:10px;
+}
+nav a:hover{background-color:#d4e3db;}
