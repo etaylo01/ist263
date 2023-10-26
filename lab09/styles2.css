@@ -12,12 +12,9 @@ nav a{color:#4e514a;
     padding:10px;
 }
 nav a:hover{background-color:#d4e3db;}
-.center {display:flex;
-        justify-content:space-around;}
 .separate{background-color: #d9a9f1;
             border-radius: 3ex;
             padding: 20px;}
-
 
 .part1 {display: flex;
     margin: 10px;
