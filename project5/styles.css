@@ -9,7 +9,7 @@ body {background-color: #c1ebf7;
     span {display: none;}
 }
 
-nav {background-color:#5700f8;
+nav {background-color:#250069;
     margin-bottom: 30px;
     display: flex;
     justify-content: space-around;
@@ -53,4 +53,6 @@ img {width: 25%;
 .right1{flex: 3;
     order: 2;
     padding: 10px}
+
+a {color:#c1ebf7;}
 
