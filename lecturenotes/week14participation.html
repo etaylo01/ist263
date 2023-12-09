@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Handlee&family=Roboto+Condensed:ital,wght@1,100&display=swap" rel="stylesheet"> 
+    <style>
+        #modal-close {text-align:right;
+        margin:0px;}
+        #modal {
+            background-color: #ffffff;
+            border: 1px solid #000000;
+            width: 200px;
+            padding: 5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -100px -100px;
+            display: none;
+        }
+        #container {
+            position: relative;
+            margin: 0 auto;
+            width: 800px;
+        }
+        a {
+            background-color: #e69898;
+            padding: 5px;}
+        h3 {
+            font-family: 'Roboto Condensed', sans-serif;}
+        
+    </style>
+    <script>
+        function openModal () {
+            document.getElementById("modal").style.display = "block";
+        }
+        function closeModal () {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <img src="https://laferger.github.io/ist263/images/cupcakes.jpg" alt="banner of a cupcake">
+        <h1>Desserts</h1>
+        <p>Brownie sweet marzipan topping cotton candy chupa chups. Donut sweet cake apple pie cotton candy jelly beans tootsie roll candy. Lollipop dragée powder tootsie roll croissant pie. Icing donut dragée pastry tart oat cake wafer cotton candy sesame snaps. Soufflé jelly-o cotton candy chocolate cake candy canes powder. Marshmallow pie halvah marzipan chocolate cake lollipop toffee sweet roll wafer. Bonbon ice cream jelly beans liquorice cupcake. Jujubes carrot cake halvah cupcake lollipop biscuit. Cupcake brownie tootsie roll candy jujubes dragée cake. Jujubes chocolate cake chupa chups macaroon toffee oat cake jelly pastry candy canes.</p>
+        <p>Oat cake tiramisu macaroon bonbon bonbon sesame snaps jelly-o. Candy gummi bears jujubes croissant chocolate cake pudding. Danish danish icing chocolate bar lemon drops donut sweet roll tiramisu. Halvah bear claw gingerbread lollipop apple pie cookie halvah. Marshmallow sugar plum chupa chups tiramisu bonbon marzipan chocolate lemon drops carrot cake. Macaroon marshmallow cake donut sesame snaps chocolate bar muffin lollipop.</p>
+        <p>Icing ice cream tootsie roll cheesecake lollipop icing gummies pastry tootsie roll. Chocolate cookie bonbon cotton candy gummies ice cream caramels chocolate bar cheesecake. Halvah cake brownie jujubes fruitcake cupcake lollipop. Candy bonbon brownie pastry croissant dessert oat cake. Dragée topping topping sugar plum sugar plum jelly beans gingerbread. Wafer lollipop topping bonbon candy.</p>
+        <p><a onclick="openModal();">Subscribe to Our Newsletter</a></p>
+    </div>
+    <div id="modal">
+        <p id="modal-close" onclick="closeModal();">X</p>
+        <form>
+            <h3>Join Subscription List</h3>
+            <label for="name"> Name: </label> <br>
+            <input type="text" id="name" name="name"> <br>
+            <label for="email">Email:</label> <br>
+            <input type="text" id="email" name="email"> <br>
+            <input type="submit" class="button" value="Subscribe">
+        </form>
+    </div>
+
+</body>
+</html>
