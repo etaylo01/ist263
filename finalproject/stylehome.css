@@ -1,0 +1,38 @@
+body {background-color: #c1ebf7;
+    font-family: 'Oswald', sans-serif;}
+
+@media only screen and (max-width: 800px){
+    nav a {
+            width: 100%;
+            display: block;
+        }
+    span {display: none;}
+}
+
+nav {background-color:#250069;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+nav a{color: #acd0f4;
+    padding:10px;
+}
+nav a:hover{background-color:#6845dd;}
+
+/*homepage*/
+.homepart1{
+    display: flex;
+    margin: 10px;
+    border-radius: 1em;}
+
+.right2{
+    flex-basis:50%
+}
+
+.nlpleft1{
+    flex-basis:50%;
+
+}
+.nlpright1{
+
+}
