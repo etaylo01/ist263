@@ -116,6 +116,12 @@ nav a:hover{background-color:#6845dd;}
     #close {display:none;}
     #navlinks a {display: block; padding: 5px; border: 1px solid #333333}
     span {display: none;}
+    .gptpic {
+        /* Adjust the styles for .gptpic as needed to prevent overflow */
+        max-width: 100%; /* Adjust as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin: 10px; /* Add margin to prevent overlapping */
+    }
 }
 @media only screen and (min-width:800px) {#hamicon, #close {display: none;}
 }
