@@ -17,8 +17,8 @@ body {background-color: #c1ebf7;
       }
       
 
-nav {background-color:#250069; margin-bottom: 30px; display: flex; justify-content: space-around;}
-nav a{color: #f7f8f8; padding:10px;}
+nav {background-color:#3419a1; margin-bottom: 30px; display: flex; justify-content: space-around;}
+nav a{color:#c1ebf7; padding:10px;}
 nav a:hover{background-color:#6845dd;}
 
 /*homepage*/
