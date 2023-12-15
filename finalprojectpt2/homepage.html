@@ -4,73 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artificial Intelligence</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Handlee&family=Oswald:wght@200&family=Roboto+Condensed:ital,wght@1,100&display=swap" rel="stylesheet">
-    <style>
-        #hamicon {width:40px;}
-        #close {cursor:pointer;}
-        .firstrow {display:flex; justify-content:space-between;}
-        @media only screen and (min-width:800px) {
-            #hamicon, #close {display: none;}
-        }
-        @media only screen and (max-width: 799px) {
-            a {
-                display: block;
-                padding: 5px;
-                border: 1px solid #333333}
-            #navlinks {display: none;}
-            .firstrow{display: block;}
-        }
-    </style>
-    <script>
+   
+   <script>
         function showNav() {
             document.getElementById("navlinks").style.display = "block";
         }
         function hideNav() {
             document.getElementById("navlinks").style.display = "none";
         }
+        function showClose() {
+            document.getElementById("close").style.display = "block";
+        }
+        function hideClose() {
+            document.getElementById("close").style.display = "none";
+        }
     </script>
 </head>
 <body>
     <div class="firstrow">
-        <img id="hamicon" src="http://laferger.github.io/ist263/images/hamburger.png" alt="hamburgericon" onclick="showNav();">
+        <img id="hamicon" src="http://laferger.github.io/ist263/images/hamburger.png" alt="hamburgericon" onclick="showNav(); showClose();">
         <p id="close" onclick="hideNav();">X</p>
     </div>
 
-    <nav id="navlinks">
-            <a href="homepage.html">Home</a> <span>|</span>
-            <a href="timeline.html">Timeline of AI</a> <span>|</span>
-            <a href="nlp.html">Natural Language Processing through AI</a>
+    <nav id="navlinks" onclick="hideClose();">
+            <a href="#main" tabindex="1" class="skip">Skip to Content</a> <br>
+            <a href="homepage.html" tabindex="2">Home</a> <span>|</span>
+            <a href="timeline.html" tabindex="3">Timeline of AI</a> <span>|</span>
+            <a href="nlp.html" tabindex="4">Natural Language Processing through AI</a>
     </nav>
-
-
-    <div class="intro1">
-        <div class="leftintro">
-            <h1><strong> What is Artificial Intelligence?</strong></h1>
-            <h2>Mending the gap between machines and humans</h2> 
+<div id="main">
+    <div class="split">
+        <div class="left">
+            <h1 class="center"> What is Artificial Intelligence</h1>
+            <h2 class="center">Mending the gap between machines and humans</h2>
+            <img src="../images/download.jpeg" alt="Artificial Intelligence" id="center">
         </div>
-        <div class="rightintro">
-            <p>
-                IBM defines Artificial Intelligence as: " The science and engineering of making intelligent machines, especially intelligent computer programs. It is related to the similar task of using computers to understand human intelligence, but AI does not have to confine itself to methods that are biologically observable” (McCarthy, 2004). 
-                <a class="link1" href="https://www.ibm.com/topics/artificial-intelligence" target="_blank">Link</a>
-            </p>
-            <p>
-                Think of Artificial Intelligence as a computer learning human processes using large amounts of data. Subfields of AI include machine learning and deep learning which create systems in order to make predictions and classification algorithms.
+        <div class="right">
+            <p>IBM defines Artificial Intelligence as: " The science and engineering of making intelligent machines, especially intelligent computer programs. It is related to the similar task of using computers to understand human intelligence, but AI does not have to confine itself to methods that are biologically observable” (McCarthy, 2004). <a href="https://www.ibm.com/topics/artificial-intelligence" target="_blank">Link</a> </p>
+            <p> Think of Artificial Intelligence as a computer learning human processes using large amounts of data. Subfields of AI include machine learning and deep learning which create systems in order to make predictions and classification algorithms.
             </p>
         </div>
     </div>
-    <img class="left" src="../images/download.jpeg" alt="Artificial Intelligence">
-
-   
-    
-    <h2 class="center">Deep Learning vs. Machine Learning </h2>
-    <p class="center1">Both are subfields of Artificial Intelligence</p>
-
-    <div class="intro1">
-        <div class="left">
+        
+        <h1 class="center">Deep Learning vs. Machine Learning </h1>
+        <p class="center">Both are subfields of Artificial Intelligence</p>
+    <div class="split1">
+        <div class="left1">
             <h3>Deep Learning</h3>
             <ul>
                 <li>Comprised of neural networks of more than three layers</li>
@@ -84,7 +68,7 @@
                 </li>
             </ul>
         </div>
-        <div class="right">
+        <div class="right1">
             <h3>Machine Learning</h3>
             <ul>
                 <li>More dependent on human intervention to learn </li>
@@ -94,13 +78,13 @@
             </ul>
         </div>
     </div>
-    
-    <img class="img1" src="../images/dlml.jpeg" alt="Deep Learning and Machine Learning">
-
-    <h2 class="center">What AI Can be Used For</h2>
-    <div class="homespace">
-        <div class="home1">
-            <img src="../images/speech.jpeg" alt="Speech Recognition" width="200">
+    <div class="centerimg">
+        <img src="../images/dlml.jpeg" alt="Deep Learning and Machine Learning">
+    </div>
+        <h1>What AI Can be Used For...</h1>
+    <div class="split2">
+        <div class="one">
+            <img src="../images/speech1.jpg" alt="Speech Recognition" width="200">
             <p>Speech recognition:</p>
             <ul>
                 <li>Known as automatic speech recognition (ASE)</li>
@@ -109,17 +93,17 @@
                 <li>Allows human speech to written format</li>
             </ul>
         </div>
-        <div class="home2">
-            <img src="../images/customer1.png" alt="Customer Service" width="200">
-            <p>Customer Service</p>
+        <div class="two">
+        <img src="../images/customer1.jpg" alt="Customer Service" width="200">
+        <p>Customer Service</p>
             <ul>
                 <li>Virtual agents (chipotle uses pepper)</li>
                 <li>FAQ's- collecting data on what people ask agents, providing this to customers beforehand</li>
             </ul>
         </div>
-        <div class="home3">
-            <img src="../images/computervision.jpeg" alt="Computer Vision" width="200">
-            <p>Computer Visison</p>
+        <div class="three">
+            <img src="../images/computervision1.jpg" alt="Computer Vision" width="200">
+            <p>Computer Vision</p>
             <ul>
                 <li>Derive information from images, videos, or other visual inputs</li>
                 <li>Photo tagging in social media</li>
@@ -128,8 +112,8 @@
                 <li>Facial Recognition</li>
             </ul>
         </div>
-            <div class="home4">
-            <img src="../images/reccomend.png" alt="Reccomendation engines" width="200">
+        <div class="four">
+            <img src="../images/reccomend.jpg" alt="Reccomendation engines" width="200">
             <p>Reccomendation Engines</p>
             <ul>
                 <li>Using consumer behavior data to discover trends</li>
@@ -137,17 +121,18 @@
             </ul>
         </div>
     </div>
-    <div class="homespace2">
-        <div class="home5">
-            <img src="../images/stocks.jpeg" alt="Stocks" width="200">
+
+    <div class="split2">
+        <div class="five">
+            <img src="../images/stocks.jpg" alt="Stocks" width="200">
             <p>Automated Stock Trading</p>
             <ul>
                 <li>Optimize stock portfolios</li>
                 <li>Trades without human intervention </li>
             </ul>
         </div>
-        <div class="home6">
-            <img src="../images/robots.jpeg" alt="Robots" width="200">
+        <div class="six">
+            <img src="../images/robots.jpg" alt="Robots" width="200">
             <p>Robotics</p>
             <ul>
             <li>Carrying goods in hospitals, factories, and warehouses</li> 
@@ -157,18 +142,18 @@
             </li>
             </ul>
         </div>
-        <div class="home7">
-        <img src="../images/datasecurity.jpeg" alt="Data Security" width="200">
-        <p>Data Security</p>
-        <ul>
-            <li>Identify unknown threats</li>
-            <li>Flaw identification</li>
-            <li>Threat prevention</li>
-            <li>Responding to threats</li>
-        </ul>
+        <div class="seven">
+            <img src="../images/datasecurity.jpg" alt="Data Security" width="200">
+            <p>Data Security</p>
+            <ul>
+                <li>Identify unknown threats</li>
+                <li>Flaw identification</li>
+                <li>Threat prevention</li>
+                <li>Responding to threats</li>
+            </ul>
         </div>
     </div>
-    <p>... and so many more!</p>
-
+        <h2>... and so much more!</h2>
+</div>
 </body>
 </html>

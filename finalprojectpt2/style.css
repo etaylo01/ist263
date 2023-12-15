@@ -1,0 +1,140 @@
+body {background-color: #c1ebf7;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+
+
+    body {
+        background: linear-gradient(to right, #c1ebf7, #9db8ef);
+        animation: gradientAnimation 15s infinite alternate;
+      }
+      
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0%;
+        }
+        100% {
+          background-position: 100%;
+        }
+      }
+      
+
+nav {background-color:#250069; margin-bottom: 30px; display: flex; justify-content: space-around;}
+nav a{color: #acd0f4; padding:10px;}
+nav a:hover{background-color:#6845dd;}
+
+/*homepage*/
+.split{display:flex; align-items: center; justify-content:center;}
+.left{flex-basis: 50%; padding: 20px; margin:auto; text-align:center;}
+.right{flex-basis: 50%; padding:20px; border: 1px solid black;}
+
+.center{display:flex; justify-content: center;}
+
+.split1{display:flex; background-color: #5a44b4; color:#c1ebf7;border-radius: 10px; margin-bottom: 10px;}
+.split1 a {color:#c1ebf7;}
+.left1{flex-basis: 50%; padding: 40px;}
+.right1{flex-basis: 50%; padding:40px;}
+.centerimg{display: flex;
+    justify-content: center;
+    align-items: center;}
+
+
+.split2 {display: flex; justify-content: space-around; margin: 20px;}
+.split2 > div {flex: 1; max-width: 300px; padding: 20px; box-sizing: border-box; transition: transform 0.3s ease-in-out;}
+
+.split2 > div:hover {transform: scale(1.05); box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); background-color: #acd0f4;}
+
+
+
+/*timeline*/
+.img1 {width: 25%; margin: 0 auto; display:flex; justify-content: center;}
+
+.split3{display: flex; margin: 10px; border-radius: 1em; flex-wrap: wrap;}
+.right3, .left3 {display: flex; background-color: #000000; margin: 10px; border-radius: 1em; flex-wrap: wrap; color:#c1ebf7}
+.left3{flex:1; order: 1; padding: 10px; align-items: center; font-size: larger; justify-content: center;}
+.right3{flex: 3; order: 2; padding: 10px}
+.split3 a {color: #f6c1c1;}
+.split3 > div {transition: transform 0.3s ease-in-out;}
+.split3 > div:hover {transform: scale(1.05); box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); background-color: #000000;}
+
+/*nlp*/
+.box{display: flex; margin-right: 400px; margin-left: 400px; padding: 10px; border: 1px solid black}
+.nlpsplit{display: flex; background-color: #5a44b4; color:#c1ebf7; border-radius: 10px; margin-top: 10px;}
+.nlpleft{flex-basis: 50%; padding: 40px; margin: 10px;}
+.nlpright{flex-basis: 50%; padding:40px; align-items:flex-end;}
+
+.right4{margin-left: 100px; margin-right:100px;}
+.border{border: 1px solid black; margin:20px; padding: 10px;}
+.split4 {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.split4 > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+.split4 > div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: #c1ebf7;
+}
+.split5 {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.split6{
+    display:flex; 
+    justify-content:space-around;
+    margin:50px;
+}
+.split6 div{
+    flex:1;
+    padding:30px;
+}
+
+
+
+
+#hamicon {width:40px;}
+#close {cursor:pointer;}
+
+.firstrow{display:flex; justify-content: space-between;}
+@media only screen and (max-width: 900px) {
+    .split, .split1, .split2, .split3, .split4, .split5, .split6, .box, .nlpsplit{flex-direction: column;}
+    .right, .left, .right1, .left1, .right4, .split4 div, .split5, .split6 div, .box, .nlpleft, .nlpright{flex-basis: 100%; margin: 10px;}
+    .border {margin: 10px;}
+    #navlinks {display: none;}
+    #close {display:none;}
+    #navlinks a {display: block; padding: 5px; border: 1px solid #333333}
+    span {display: none;}
+}
+@media only screen and (min-width:800px) {#hamicon, #close {display: none;}
+}
+
+/*accessibilit*/
+.skip {
+    background-color: #cac3c3;
+    padding: 5px;
+    border: 1px solid #000000;
+    text-decoration: none; /*removes the underline*/
+    position: absolute; /*positions an element relative to the top left of the viewport*/
+    top: 10px;
+    left: -999px; /*-999 pushes off the left side of the screen*/
+}
+.skip:focus {
+    left: 10px; /* bring it back when its been tabbed to */
+}
+
+
+
+
+
