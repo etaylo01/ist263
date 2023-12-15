@@ -20,6 +20,7 @@ body {background-color: #c1ebf7;
 nav {background-color:#3419a1; margin-bottom: 30px; display: flex; justify-content: space-around;}
 nav a{color:#c1ebf7; padding:10px;}
 nav a:hover{background-color:#6845dd;}
+span {color:#c1ebf7}
 
 /*homepage*/
 .split{display:flex; align-items: center; justify-content:center;}
@@ -129,7 +130,7 @@ nav a:hover{background-color:#6845dd;}
     .border {margin: 10px;}
     #navlinks {display: none;}
     #close {display:none;}
-    #navlinks a {display: block; padding: 5px; border: 1px solid #333333}
+    #navlinks a {display: block; padding: 5px; border: 1px solid #f9f7f7}
     span {display: none;}
     .gptpic {
         /* Adjust the styles for .gptpic as needed to prevent overflow */
