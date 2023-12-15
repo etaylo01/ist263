@@ -109,7 +109,7 @@ span {color:#c1ebf7}
 #close {cursor:pointer;}
 
 .firstrow{display:flex; justify-content: space-between;}
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     .split, .split1, .split3, .split5, .box, .nlpsplit{flex-direction: column;}
     .right, .left, .right1, .left1, .right4, .split4 div, .split5, .box, .nlpleft, .nlpright, .left5, .right5{flex-basis: 100%; margin: 10px;}
     .split6 {
