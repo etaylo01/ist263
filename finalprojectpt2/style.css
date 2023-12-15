@@ -109,8 +109,23 @@ nav a:hover{background-color:#6845dd;}
 
 .firstrow{display:flex; justify-content: space-between;}
 @media only screen and (max-width: 900px) {
-    .split, .split1, .split2, .split3, .split4, .split5, .split6, .box, .nlpsplit{flex-direction: column;}
-    .right, .left, .right1, .left1, .right4, .split4 div, .split5, .split6 div, .box, .nlpleft, .nlpright{flex-basis: 100%; margin: 10px;}
+    .split, .split1, .split3, .split5, .box, .nlpsplit{flex-direction: column;}
+    .right, .left, .right1, .left1, .right4, .split4 div, .split5, .box, .nlpleft, .nlpright, .left5, .right5{flex-basis: 100%; margin: 10px;}
+    .split6 {
+        flex-direction: column;
+        margin: 10px; /* Reduce margin for smaller screens */
+    }
+    .split4, .split2{
+        flex-direction: column;
+        align-items: center; /* Center items along the cross-axis */
+        margin: 10px; /* Reduce margin for smaller screens */
+    }
+
+    .split6 div {
+        flex-basis: 100%;
+        margin: 10px; /* Reduce margin for smaller screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
     .border {margin: 10px;}
     #navlinks {display: none;}
     #close {display:none;}
