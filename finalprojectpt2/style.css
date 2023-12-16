@@ -46,24 +46,80 @@ span {color:#c1ebf7}
 
 
 /*timeline*/
-.img1 {width: 25%; margin: 0 auto; display:flex; justify-content: center;}
+.img1 {
+    width: 25%;
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+}
 
-.split3{display: flex; margin: 10px; border-radius: 1em; flex-wrap: wrap;}
-.right3, .left3 {display: flex; background-color: #000000; margin: 10px; border-radius: 1em; flex-wrap: wrap; color:#c1ebf7}
-.left3{flex:1; order: 1; padding: 10px; align-items: center; font-size: larger; justify-content: center;}
-.right3{flex: 3; order: 2; padding: 10px}
-.split3 a {color: #f6c1c1;}
-.split3 > div {transition: transform 0.3s ease-in-out;}
-.split3 > div:hover {transform: scale(1.05); box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); background-color: #000000;}
-
+.split3{
+    display: flex;
+    margin: 10px;
+    border-radius: 1em;
+    flex-wrap: wrap;
+}
+.right3, .left3 {
+    display: flex;
+    background-color: #000000;
+    margin: 10px;
+    border-radius: 1em;
+    flex-wrap: wrap;
+    color:#c1ebf7
+}
+.left3{
+    flex:1;
+    order: 1;
+    padding: 10px;
+    align-items: center;
+    font-size: larger;
+    justify-content: center;}
+.right3{
+    flex: 3;
+    order: 2;
+    padding: 10px
+}
+.split3 a {
+    color: #f6c1c1;
+}
+.split3 > div {
+    transition: transform 0.3s ease-in-out;
+}
+.split3 > div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #000;
+    background-color: #000;
+}
 /*nlp*/
-.box{display: flex; margin-right: 400px; margin-left: 400px; padding: 10px; border: 1px solid black}
-.nlpsplit{display: flex; background-color: #5a44b4; color:#c1ebf7; border-radius: 10px; margin-top: 10px;}
-.nlpleft{flex-basis: 50%; padding: 40px; margin: 10px;}
-.nlpright{flex-basis: 50%; padding:40px; align-items:flex-end;}
+.box{
+    display: flex;
+    margin-right: 400px;
+    margin-left: 400px;
+    padding: 10px;
+    border: 1px solid black}
+.nlpsplit{
+    display: flex;
+    background-color: #5a44b4;
+    color:#c1ebf7;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.nlpleft{
+    flex-basis: 50%;
+    padding: 40px;
+    margin: 10px;}
+.nlpright{
+    flex-basis: 50%;
+    padding:40px;
+    align-items:flex-end;}
 
-.right4{margin-left: 100px; margin-right:100px;}
-.border{border: 1px solid black; margin:20px; padding: 10px;}
+.right4{
+    margin-left: 100px;
+    margin-right:100px;}
+.border{
+    border: 1px solid black;
+    margin:20px;
+    padding: 10px;}
 .split4 {
     display: flex;
     justify-content: space-around;
@@ -106,40 +162,58 @@ span {color:#c1ebf7}
 
 
 #hamicon {width:40px;}
-#close {cursor:pointer;}
+#close {
+    cursor:pointer;
+}
 
 .firstrow{display:flex; justify-content: space-between;}
 @media only screen and (max-width: 1000px) {
-    .split, .split1, .split3, .split5, .box, .nlpsplit{flex-direction: column;}
-    .right, .left, .right1, .left1, .right4, .split4 div, .split5, .box, .nlpleft, .nlpright, .left5, .right5{flex-basis: 100%; margin: 10px;}
+    .split, .split1, .split3, .split5, .box, .nlpsplit{
+        flex-direction: column;
+    }
+    .right, .left, .right1, .left1, .right4, .split4 div, .split5, .box, .nlpleft, .nlpright, .left5, .right5{
+        flex-basis: 100%;
+        margin: 10px;
+    }
     .split6 {
         flex-direction: column;
-        margin: 10px; /* Reduce margin for smaller screens */
+        margin: 10px;
     }
     .split4, .split2{
         flex-direction: column;
-        align-items: center; /* Center items along the cross-axis */
-        margin: 10px; /* Reduce margin for smaller screens */
+        align-items: center;
+        margin: 10px;
     }
 
     .split6 div {
         flex-basis: 100%;
-        margin: 10px; /* Reduce margin for smaller screens */
-        padding: 10px; /* Reduce padding for smaller screens */
+        margin: 10px;
+        padding: 10px;
     }
-    .border {margin: 10px;}
-    #navlinks {display: none;}
-    #close {display:none;}
-    #navlinks a {display: block; padding: 5px; border: 1px solid #f9f7f7}
-    span {display: none;}
+    .border {
+        margin: 10px;
+    }
+    #navlinks {
+        display: none;
+    }
+    #close {
+        display:none;
+    }
+    #navlinks a {
+        display: block;
+        padding: 5px;
+        border: 1px solid #f9f7f7}
+    span {
+        display: none;
+    }
     .gptpic {
-        /* Adjust the styles for .gptpic as needed to prevent overflow */
-        max-width: 100%; /* Adjust as needed */
-        height: auto; /* Maintain aspect ratio */
-        margin: 10px; /* Add margin to prevent overlapping */
+        max-width: 100%;
+        height: auto;
+        margin: 10px;
     }
 }
-@media only screen and (min-width:800px) {#hamicon, #close {display: none;}
+@media only screen and (min-width:800px) {
+    #hamicon, #close {display: none;}
 }
 
 /*accessibilit*/
